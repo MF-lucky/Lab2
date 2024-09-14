@@ -1,0 +1,93 @@
+﻿@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: 
+   Date:   
+   
+   Filename: lake_styles.css
+
+*/
+/*大框架*/
+body{
+   background-color: rgb(175, 199, 147);
+}
+header{
+   background-color: rgb(120, 81, 142,0.8);/*半透明色*/
+}
+section#leftcol{
+   background-color: rgb(0, 0, 0);
+}
+section#rightcol{
+   background-color: rgb(73, 44, 94);
+}
+p{
+   color:aliceblue
+}
+h1{
+   color: aliceblue;
+}
+h2{
+   color: aliceblue;
+}
+a{
+   color: rgb(194, 191, 191);
+}
+a:hover{
+   color: rgb(92, 15, 150);/*伪元素的使用*/
+}
+section#leftcol aside.notes{
+   background-color: #f6b9a2;
+}
+section#leftcol aside.upcoming-events{
+   background-color: #dbce8f;
+}
+footer {
+   color: rgb(212, 211, 200);
+   background-color: rgb(51, 50, 50, 0.95);
+}
+/*细节*/
+.indent1{
+   color: aliceblue;
+}
+.indent2{
+   color: rgb(252, 157, 227);
+}
+blockquote{
+   color: rgb(120, 81, 142);
+   font-family: 华文隶书;
+   font-size: 25px;
+   margin-top: 30%;
+}
+/*字体样式*/
+@font-face {
+   font-family: 'CACChampagne'; /* 字体名称 */
+   src:
+        url('cac_champagne.woff') format('woff'),
+        url('cac_champagne.ttf') format('truetype');
+ }
+ 
+
+section#rightcol > nav >h2{
+   line-height: 1;  /*文本垂直边距*/
+   font-size: 30px;
+	font-family: 'CACChampagne';
+}
+section#leftcol > h1{
+	font-family: 'CACChampagne';
+   font-size: 50px;
+   line-height: 0;  /*文本垂直边距*/
+   margin-top: 7%;  /*上边距*/
+   margin-bottom: 7%; /*下边距*/
+   margin-left: 2%;
+}
+section#leftcol >aside >h2{
+   font-size: large;
+}
+section#leftcol >aside >h1{
+   font-size: x-large;
+   text-align: center;
+}
